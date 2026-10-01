@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class MovingMaze : MonoBehaviour
 {
@@ -11,6 +12,12 @@ public class MovingMaze : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("updating");
+        
+        if (Input.GetKeyDown(KeyCode.Up))
+        {
+            Debug.Log("up pressed");
+        }
         
     }
 }
